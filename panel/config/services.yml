@@ -1,0 +1,25 @@
+imports: {  }
+parameters:
+    default.namespace:
+        - Oasis\Mlib\
+        - GoldSdk\Panel\
+services:
+    app:
+        properties:
+            logging:
+                path: '%app.dir.log%'
+                level: debug
+            cli:
+                name: panel
+                version: '0.1'
+            http:
+                cache_dir: '%app.dir.cache%'
+                routing:
+                    path: '%app.dir.config%/routes.yml'
+                    namespaces:
+                        - GoldSdk\Panel\
+                        - GoldSdk\Panel\Controllers\
+                twig:
+                    template_dir: '%app.dir.template%'
+                    globals:
+                        app: '@app'

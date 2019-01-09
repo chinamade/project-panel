@@ -1,0 +1,6 @@
+is_debug: true
+dir:
+    log: ./logs
+    data: ./data
+    cache: ./cache
+    template: ./templates

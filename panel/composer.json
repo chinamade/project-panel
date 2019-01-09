@@ -1,0 +1,13 @@
+{
+    "require": {
+        "oasis/slimapp": "^2.4",
+        "oasis/slimvue": "^2.6",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "name": "goldsdk/panel",
+    "autoload": {
+        "psr-4": {
+            "GoldSdk\\Panel\\": "src/"
+        }
+    }
+}
